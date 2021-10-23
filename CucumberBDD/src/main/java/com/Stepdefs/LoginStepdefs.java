@@ -50,13 +50,12 @@ public class LoginStepdefs {
 		Assert.assertEquals("JavaByKiran | Dashboard", driver.getTitle());
 	}
 
-	/*
-	 * @When("^user enters valid credentials$") public void
-	 * user_enters_valid_credentials() throws Throwable {
-	 * driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
-	 * driver.findElement(By.id("password")).sendKeys("123456");
-	 * 
-	 * }
-	 */
+	
+	  @When("^user enters valid credentials$") public void
+	 user_enters_valid_credentials() throws Throwable {
+	  driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
+	  driver.findElement(By.id("password")).sendKeys("123456");
+	  
+	  }
 
 }
